@@ -1,6 +1,6 @@
 async function init() {
   const lastWorkout = await API.getLastWorkout();
-  // console.log(lastWorkout);
+  console.log(lastWorkout);
 
   document
     .querySelector("a[href='/exercise?']")
@@ -67,5 +67,3 @@ function renderWorkoutSummary(summary) {
     container.appendChild(p);
   });
 }
-
-init();
